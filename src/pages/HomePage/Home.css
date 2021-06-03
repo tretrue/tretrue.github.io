@@ -1,0 +1,145 @@
+html {
+    overflow: hidden;
+}
+.body {
+    margin: 0;
+    font-size: 26px !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    color: #ffffff !important;
+    height: 100vh !important;
+    perspective: 1px !important;
+    transform-style: preserve-3d !important;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+}
+.parallax-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top:5vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("../../assets/trianglify.png");
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+    background-repeat: no-repeat;
+}
+.regular-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("../../assets/trianglify2.png");
+    z-index: 2;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.parallax-wrapper2 {
+    width: 100vw;
+    height: 100vh;
+    padding-top:5vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallax-wrapper2::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("../../assets/trianglify3.png");
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+    background-repeat: no-repeat;
+}
+.regular-wrapper2 {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("../../assets/trianglify2.png");
+    z-index: 2;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+.texas-parallax-wrapper {
+     width: 100vw;
+     height: 100vh;
+     padding-top:5vh;
+     box-sizing: border-box;
+     transform-style: preserve-3d;
+ }
+.texas-parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("../../assets/Texas.png");
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mizzou-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("../../assets/mizzou.png");
+    z-index: 2;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: dimgray;
+}
+.rounded{
+    border: 2px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgb(0,0,0);
+    -moz-box-shadow: 0 0 10px rgb(0,0,0);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-pic{
+    width: 25rem;
+    height: 35rem;
+}
+.welcome-pic-wide{
+    width: 45rem;
+    height: 35rem;
+}
+.welcome-header {
+    color: dodgerblue;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-content {
+
+}
+.created {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
